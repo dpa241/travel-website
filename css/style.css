@@ -1,0 +1,313 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Variable Define */
+:root {
+  --primary-color: #1dc9a5;
+  --secondary-color: #;
+  --indigo-color: #68a0f4;
+  --white-color: #fff;
+  --rating-color: #f5a302;
+
+  /* Text Color variable */
+  --text-primary: #323232;
+  --text-secondary: #757575;
+  --text-black: #201a1b;
+
+  /* Font Family */
+  --primary-font: "Urbanist", sans-serif;
+  --secondary-font: "Barlow", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: var(--text-primary);
+}
+
+/* Custom Css */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+::-webkit-scrollbar {
+  width: 0.425rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--white-color);
+}
+h2 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--text-black);
+}
+h3 {
+  margin-bottom: 0;
+  line-height: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.main-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.secondary-btn {
+  width: 110px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  z-index: 50;
+  transition: all 0.3s ease-in;
+}
+.secondary-btn:hover{
+    background-color: green;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+  transition: all 0.3s ease-in;
+}
+.icons:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  .active {
+    background-color: #1dc9a459;
+  }
+/* Header Css */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000 ;
+  color: var(--white-color);
+}
+.header-top {
+  background-color: var(--indigo-color);
+}
+
+.contact i,
+a {
+  cursor: pointer;
+  color: var(--white-color);
+}
+.header-bottom {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+/* Banner css */
+.banner {
+  display: flex;
+  background: url("/images/overlay.png"), url("/images/banner.png");
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Banner left part css */
+.banner-left {
+  position: relative;
+  color: var(--white-color);
+}
+.banner-left p {
+  position: absolute;
+  top: -50px;
+  left: -15px;
+  transform: rotate(90deg);
+}
+.banner-left>i{
+    padding-left: 12px;
+}
+.search-bar {
+  width: 800px;
+  font-family: var(--secondary-font);
+  color: var(--text-primary);
+  border-radius: 45px;
+}
+.search-bar p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.flower-box {
+  position: relative;
+  margin-right: 10px;
+}
+.flower-shape {
+  width: 80px;
+  height: 80px;
+}
+.flower-img {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  top: 2px;
+  left: 1px;
+}
+.flower-overlay {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  top: 2px;
+  left: 1px;
+}
+.banner-right {
+  padding-top: 400px;
+}
+.banner-right img {
+    width: 20px;
+}
+.tour {
+  position: relative;
+}
+.middle-background {
+  position: absolute;
+  top: -600px;
+  z-index: -200;
+  width: 100%;
+  height: 1120px;
+  background-color: #e5ebf5;
+}
+.middle-background img {
+  position: absolute;
+  width: 1000px;
+  top: 55%;
+  right: 0;
+}
+.tour-card {
+  padding-top: 80px;
+  font-family: var(--secondary-font);
+}
+.popular-header p{
+    color: var(--text-secondary);
+}
+.shape-wrapper {
+  position: relative;
+  width: 420px;
+  height: 532px;
+  background: url("/images/shape-shadow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-color: #68a0f4; */
+}
+.place-img {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  width: 365px;
+}
+.line-overlay {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 367px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.line-overlay:hover {
+  opacity: 1;
+}
+.card-services {
+  position: absolute;
+  top: 210px;
+  left: 20px;
+  width: 90%;
+  padding: 20px 42px 20px 18px;
+}
+.card-top {
+  color: var(--text-secondary);
+  border-bottom: 1px solid #7575755d;
+}
+
+.card-description h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+}
+
+.card-description p {
+  color: #757575;
+}
+
+.ratings:first-child {
+  font-weight: 700;
+  color: #757575;
+}
+
+.ratings-icon {
+  font-size: 14px;
+  color: var(--rating-color);
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 600;
+  color: #323232;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+}
